@@ -2,6 +2,8 @@
   <div id="app">
     <v-app>
 
+      <pwa-installer></pwa-installer>
+
       <ErrorDialogComponent
           title="Error"
           width="500"
@@ -44,9 +46,11 @@
 import ErrorDialogComponent from "@/components/error.dialog.component.vue";
 import EventDialogComponent from "@/components/event.dialog.component.vue";
 import {mapMutations, mapState} from "vuex";
+import PwaInstaller from "@/components/pwaInstaller.vue";
 export default {
   name: 'App',
   components:{
+    PwaInstaller,
     ErrorDialogComponent,
     EventDialogComponent
   },
