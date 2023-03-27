@@ -1,14 +1,11 @@
 <template>
   <transition name="fade-up-in" appear>
-    <div v-if="shown"
-    >
-      Add app to home screen?
+    <div v-if="shown" style="margin: 10px 0">
+      Do you want to install application ?
 
-      <button @click="installPWA">Install!</button>
+      <v-btn small dark color="green" class="ma-1" @click="installPWA">Yes please !</v-btn>
 
-      <button @click="dismissPrompt">
-        <span>Dismiss without installing</span>
-      </button>
+      <v-btn small dark color="red" class="ma-1" @click="dismissPrompt">No thanks.</v-btn>
     </div>
   </transition>
 </template>
