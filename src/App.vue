@@ -61,6 +61,7 @@ export default {
   data: () => ({
     index:-1,
     btns:[
+      {title: 'Home', path: '/'},
       {title:'Heroes',path:'/heroes'},
       {title:'Teams',path:'/teams'},
       {title:'Organisations',path:'/orgs'},
